@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.container {
+    height: 70vh;
+    /*it means 70% of page goes to container*/
+    display: flex;
+    /*when we do flex the boxes came into single line*/
+
+    justify-content: center;
+    /* where the box goes to center position*/
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    /*when we do flex the boxes came into single line*/
+    flex-wrap: wrap;
+    /*if there is no space infront then come to next line*/
+    justify-content: center;
+    /* where the box goes to center position*/
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    /* the corner of box get curve , here 1rem = 16px we can write both px as well as rem*/
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    color: #b0413e;
+
+}
+
+#reset-btn {
+    padding: 16px;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+
+#new-btn {
+    padding: 16px;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+
+#msg {
+    color: #ffffc7;
+    font-size: 5vmin;
+}
+
+.msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.hide {
+    display: none;
+}
